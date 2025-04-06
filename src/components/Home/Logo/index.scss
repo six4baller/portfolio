@@ -1,0 +1,80 @@
+.logo-container {
+  z-index: 0;
+  width: 400px;
+  height: 609px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 15%;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+
+  svg {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    transform: rotateZ(30deg) !important;
+  }
+
+  .solid-logo {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    opacity: 0;
+    transform: rotateZ(30deg) !important;
+    z-index: 1;
+  }
+}
+
+.svg-container {
+  // stroke: #ffd700;
+  stroke: rgba(252, 247, 255, 0.552);
+  stroke-width: 1;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  // spin code image
+    
+    
+  // @keyframes spin {
+  //   from{
+  //     transform: rotate(0deg);
+  //   }
+  //   to{
+  //     transform: rotate(360deg);
+  //   }
+  // }
+
+  // img{
+  //   animation: spin 2s linear infinite;
+  // }
+
+
+  .logo-container {
+    position: relative;
+    width: 200px;
+    // height: auto;
+    // top: 50px;
+    // right: 0;
+    // box-sizing: border-box;
+    // margin: auto;
+    // left: 0;
+  }
+
+  .logo-container svg {
+    // position: absolute;
+    // top: auto;
+    // right: auto;
+    bottom: auto;
+    // left: 0;
+    // margin: auto;
+  }
+  
+}
