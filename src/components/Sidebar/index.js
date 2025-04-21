@@ -17,7 +17,11 @@ import {
   // faFolderOpen,
   // faBriefcase,
 } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faTelegram } from '@fortawesome/free-brands-svg-icons'
+import {
+  faGithub,
+  faTelegram,
+  faLinkedin,
+} from '@fortawesome/free-brands-svg-icons'
 import { useState } from 'react'
 
 const Sidebar = () => {
@@ -76,6 +80,15 @@ const Sidebar = () => {
       </nav>
 
       <ul className="ul">
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/amir-six4-14757b361/"
+          >
+            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          </a>
+        </li>
         <li>
           <a
             target="_blank"

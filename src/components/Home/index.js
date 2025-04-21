@@ -8,11 +8,25 @@ import Loader from 'react-loaders'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['i', 'x', '4',]
-  const jobArray = ['w','e','b',' ','d','e','v','e','l','o','p','e','r','.',]
+  const nameArray = ['i', 'x', '4']
+  const jobArray = [
+    'w',
+    'e',
+    'b',
+    ' ',
+    'd',
+    'e',
+    'v',
+    'e',
+    'l',
+    'o',
+    'p',
+    'e',
+    'r',
+    '.',
+  ]
   // const word = "Web Developer".split("")
 
-  
   useEffect(() => {
     setTimeout(() => {
       return setLetterClass('text-animate-hover')
@@ -28,45 +42,39 @@ const Home = () => {
   //   return () => clearTimeout(timeoutId);
   // }, []); // Empty dependency array, so this useEffect runs only once
 
-
-
-
   return (
     <>
-    <div className="containerH home-page">
-       <div className="text-zone">
+      <div className="containerH home-page">
+        <div className="text-zone">
           <h1>
-          <span className={letterClass}>H</span>  
-          <span className={ `${letterClass} _12`}>i,</span>  
-          <br />
-          <span className={ `${letterClass} _13`}>I</span>
-          <span className={ `${letterClass} _14`}>'m</span>
-          <img src={LogoTitle} alt="developer" />
-           <AnimatedLetters
-           letterClass={letterClass}
-           strArray={nameArray}
-           idx={15}/>
-          <br />
-          <AnimatedLetters
-           letterClass={letterClass}
-           strArray={jobArray}
-           idx={18}/>
+            <span className={letterClass}>H</span>
+            <span className={`${letterClass} _12`}>i,</span>
+            <br />
+            <span className={`${letterClass} _13`}>I</span>
+            <span className={`${letterClass} _14`}>'m</span>
+            <img src={LogoTitle} alt="developer" />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={nameArray}
+              idx={15}
+            />
+            <br />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={jobArray}
+              idx={18}
+            />
           </h1>
-          <h2>
-           frontend developer / react expert / baller
-          </h2>
-          <Link to="/contact" className='flat-button'>Contact me</Link>
-       </div>
+          <h2>frontend developer / react expert</h2>
+          <Link to="/contact" className="flat-button">
+            Contact me
+          </Link>
+        </div>
         <Logo />
-    </div>
-    <Loader type='pacman'/>
+      </div>
+      <Loader type="pacman" />
     </>
   )
-  
 }
 
-
 export default Home
-
-
- 
